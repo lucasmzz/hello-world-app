@@ -1,5 +1,9 @@
+<script setup>
+import OrderList from '@/components/OrderList.vue'
+</script>
+
 <template>
-  <main>
-    <h1>ORDERS 2.0 RELOADED</h1>
-  </main>
+  <section class="pt-4">
+    <OrderList />
+  </section>
 </template>
