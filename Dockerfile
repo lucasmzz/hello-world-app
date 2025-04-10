@@ -2,7 +2,7 @@
 FROM node:18 as builder
 WORKDIR /app
 COPY . .
-RUN npm install && npm run build
+RUN npm install && VITE_API_URL=/orders npm run build
 
 # Step 2: Serve it with nginx
 FROM nginx:alpine
